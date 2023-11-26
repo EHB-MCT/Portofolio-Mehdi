@@ -12,7 +12,7 @@
 	background-image: url("../Images/Mehdi2.JPEG");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: 30vh;
 	height: 100vh;
 	width: 100vh;
 }
@@ -36,8 +36,21 @@
 	margin: 2rem 0 3rem;
 }
 
-img {
-	border-radius: 30px;
+.button {
+	display: inline-block;
+	padding: 1rem 2.8rem;
+	background: white;
+	border-radius: 4rem;
+	box-shadow: 0 0 1rem white;
+	font-size: 1.5;
+	color: black;
+	letter-spacing: 0.1rem;
+	font-weight: 600;
+	transition: 0.3s ease;
+}
+
+.button:hover {
+	box-shadow: none;
 }
 
 footer {
@@ -48,4 +61,23 @@ footer {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: cornflowerblue;
+}
+
+.about-me-section {
+	text-align: center;
+	padding: 50px;
+}
+
+.about-me-section img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 50%;
+	margin: 20px;
 }

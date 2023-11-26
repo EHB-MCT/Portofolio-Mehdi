@@ -120,10 +120,10 @@ span {
 	box-shadow: 0 0 1rem white;
 }
 
-.btn {
+.button {
 	display: inline-block;
 	padding: 1rem 2.8rem;
-	background: lightslategray;
+	background: white;
 	border-radius: 4rem;
 	box-shadow: 0 0 1rem white;
 	font-size: 1.5;
@@ -133,7 +133,7 @@ span {
 	transition: 0.3s ease;
 }
 
-.btn:hover {
+.button:hover {
 	box-shadow: none;
 }
 

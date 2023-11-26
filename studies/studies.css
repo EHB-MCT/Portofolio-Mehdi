@@ -47,6 +47,23 @@
 	margin: 1rem 0 3rem;
 }
 
+.button {
+	display: inline-block;
+	padding: 1rem 2.8rem;
+	background: white;
+	border-radius: 4rem;
+	box-shadow: 0 0 1rem white;
+	font-size: 1.5;
+	color: black;
+	letter-spacing: 0.1rem;
+	font-weight: 600;
+	transition: 0.3s ease;
+}
+
+.button:hover {
+	box-shadow: none;
+}
+
 footer {
 	background: rgba(0, 0, 0, 0.1);
 	color: #fff;
