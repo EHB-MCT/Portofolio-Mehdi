@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Oswald&display=swap");
+
+.about {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	background: lightslategray;
+}
+
+.about-img {
+	background-image: url("../Images/Mehdi2.JPEG");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 100vh;
+	width: 100vh;
+}
+
+.heading {
+	text-align: center;
+	font-size: 4.5rem;
+}
+
+.about-content h2 {
+	text-align: left;
+	line-height: 1.2;
+}
+
+.about-content h3 {
+	font-size: 2.6rem;
+}
+
+.about-content p {
+	font-size: 1.6rem;
+	margin: 2rem 0 3rem;
+}
+
+img {
+	border-radius: 30px;
+}
+
+footer {
+	background: rgba(0, 0, 0, 0.1);
+	color: #fff;
+	text-align: center;
+	padding: 1em 0;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}

@@ -3,32 +3,48 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Introduction</title>
-		<link rel="stylesheet" href="style.css" />
+		<title>Website</title>
+
 		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+		<link rel="stylesheet" href="globals.css" />
+		<link rel="stylesheet" href="home.css" />
 	</head>
 
 	<body>
 		<header class="header">
-			<a href="#" class="logo">Introduction</a>
+			<a href="#" class="logo">Home</a>
 
-			<input type="checkbox" id="check" />
-			<label for="check" class="icons">
-				<i class="bx bx-menu" id="menu-icon"></i>
-				<i class="bx bx-x" id="close-icon"></i>
-			</label>
+			<i class="bx bx-menu" id="menu-icon"></i>
 
 			<nav class="navbar">
-				<a href="#" style="--i: 0">Home</a>
-				<a href="#" style="--i: 1">Aboute Me</a>
-				<a href="#" style="--i: 2">Contact</a>
+				<a href="/index.html" class="active">Home</a>
+				<a href="/about/about.html">About me</a>
+				<a href="/studies/studies.html">Studies</a>
 			</nav>
 		</header>
 
-		<div class="wrapper">
-			<div class="achtergrond">
-				<p></p>
+		<section class="home" id="home">
+			<div class="home-content">
+				<h3>Hello, It's Me</h3>
+				<h1>Mehdi El Idrissi</h1>
+				<h3>And I'm a <span>student</span></h3>
+				<p>"Niet de rijkdom van de portemonnee, maar de rijkdom van het hart maakt het leven waardevol.".</p>
+				<div class="social-media">
+					<a href="#"><i class="bx bxl-facebook"></i></a>
+					<a href="#"><i class="bx bxl-twitter"></i></a>
+					<a href="#"><i class="bx bxl-instagram-alt"></i></a>
+				</div>
 			</div>
-		</div>
+
+			<div class="home-img">
+				<img src="Images/Mehdi1.png" alt="" />
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<p>&copy; 2023 Portofolio. All rights reserved.</p>
+			</div>
+		</footer>
 	</body>
 </html>
