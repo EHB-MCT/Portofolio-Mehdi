@@ -19,11 +19,12 @@ body {
 	background-color: cornflowerblue;
 	color: white;
 	overflow-y: hidden;
+
+	width: 100%;
 }
 
 section {
-	min-height: 100vh;
-	padding: 10rem 9% 2rem;
+	padding: 10rem 11% 4rem;
 }
 
 .header {
@@ -44,7 +45,11 @@ section {
 	font-size: 2.5rem;
 	color: white;
 	font-weight: 600;
-	cursor: default;
+	transition: 0.3s;
+}
+
+.navbar-mobile {
+	display: none;
 }
 
 .navbar a {
@@ -145,4 +150,73 @@ footer {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
+}
+.hamburger {
+	display: none;
+}
+@media only screen and (max-width: 600px) {
+	.navbar-mobile {
+		position: absolute;
+		z-index: 1000;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 40vh;
+		overflow: hidden;
+		list-style: none;
+		background: lightslategray;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-around;
+		align-items: center;
+		transform: translateY(-100%);
+		transition: transform 0.2s ease;
+	}
+	.navbar {
+		display: none;
+	}
+	.navbar-mobile:target {
+		transform: translateY(0);
+	}
+	.hamburger,
+	.close {
+		border: none;
+		cursor: pointer;
+		/* position absolute position the icons relative to the body because they have no position relative parents*/
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		width: 36px;
+		height: 36px;
+	}
+
+	.hamburger {
+		display: block;
+	}
+
+	.close {
+		background: lightslategray;
+	}
+
+	.hamburger img,
+	.close img {
+		width: 100%;
+		height: 100%;
+	}
+
+	li a {
+		display: block;
+		font-family: "Open Sans", sans-serif;
+		color: white;
+		font-weight: bold;
+		font-size: 1.2rem;
+		text-decoration: none;
+		border-bottom: 1px solid black;
+		padding-bottom: 0.5rem;
+	}
+
+	li a:hover,
+	li a:focus {
+		border-bottom: 1px solid white;
+	}
 }

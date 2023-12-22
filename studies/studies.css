@@ -1,41 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Oswald&display=swap");
 
 .services h2 {
-	margin-bottom: 10rem;
+	margin-bottom: 0;
 	font-size: 50px;
 	text-align: center;
+	gap: 100rem;
 }
 
 .services-container {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: left;
+	align-items: left;
 	flex-wrap: wrap;
 	gap: 2rem;
 }
 
 .services-container,
 .services-box {
+	display:inline-block
 	margin: 100px;
-	flex: 1 1 20rem;
-	background: lightslategray;
-	color: black;
-	padding: 3rem 2rem 4rem;
+	flex: 1 3 20rem
+	color: white;
+	padding: 1rem 2rem 4rem;
 	border-radius: 2rem;
-	text-align: center;
-	border: 0.2rem solid black;
+	text-align: left;
 	transition: 0.3s ease;
 }
 
 .services-container,
 .services-box:hover {
 	border-color: lightslategrey;
-	transform: scale(1.02);
+	transform: scale(0.95);
 }
 
 .services-box i {
-	font-size: 7rem;
-	color: black;
+	font-size: 5rem;
+	color: white;
 }
 
 .services-box h3 {

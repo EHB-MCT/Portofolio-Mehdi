@@ -6,6 +6,7 @@
 		<title>Website</title>
 
 		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
 		<link rel="stylesheet" href="globals.css" />
 		<link rel="stylesheet" href="home.css" />
@@ -15,12 +16,24 @@
 		<header class="header">
 			<a href="#" class="logo">Home</a>
 
-			<i class="bx bx-menu" id="menu-icon"></i>
+			<nav>
+				<div class="navbar">
+					<a href="/index.html" class="active">Home</a>
+					<a href="/about/about.html">About me</a>
+					<a href="/studies/studies.html">Studies</a>
+				</div>
 
-			<nav class="navbar">
-				<a href="/index.html" class="active">Home</a>
-				<a href="/about/about.html">About me</a>
-				<a href="/studies/studies.html">Studies</a>
+				<ul class="navbar-mobile" id="navbar-mobile">
+					<li><a href="/index.html" class="active">Home</a></li>
+					<li><a href="/about/about.html">About me</a></li>
+					<li><a href="/studies/studies.html">Studies</a></li>
+					<a class="close" href="#">
+						<img src="https://ljc-dev.github.io/testing0/ham-close.svg" alt="close" />
+					</a>
+				</ul>
+				<a class="hamburger" href="#navbar-mobile">
+					<img src="https://ljc-dev.github.io/testing0/ham.svg" alt="menu" />
+				</a>
 			</nav>
 		</header>
 
@@ -29,7 +42,10 @@
 				<h3>Hello, It's Me</h3>
 				<h1>Mehdi El Idrissi</h1>
 				<h3>And I'm a <span>student</span></h3>
-				<p>"Niet de rijkdom van de portemonnee, maar de rijkdom van het hart maakt het leven waardevol.".</p>
+				<p>
+					"Niet de rijkdom van de portemonnee,<br />
+					maar de rijkdom van het hart maakt het leven waardevol.".
+				</p>
 				<div class="social-media">
 					<a href="https://www.facebook.com/erasmushogeschool/?locale=nl_NL"><i class="bx bxl-facebook"></i></a>
 					<a href="https://twitter.com/ehbrussel"><i class="bx bxl-twitter"></i></a>

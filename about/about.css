@@ -3,40 +3,47 @@
 .about {
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	gap: 2rem;
+	align-items: top;
+	gap: 5rem;
 	background: lightslategray;
+	margin-top: 100px;
 }
 
 .about-img {
-	background-image: url("../Images/Mehdi2.JPEG");
-	background-position: center;
+	margin-left: 10rem;
+	background-image: url("../Images/Mehdi2.jpg");
+	background-position: bottom;
 	background-repeat: no-repeat;
-	background-size: 30vh;
+	background-size: 100vh;
 	height: 100vh;
-	width: 100vh;
+	width: 200vh;
 }
 
 .heading {
-	text-align: center;
+	text-align: justify;
 	font-size: 4.5rem;
 }
 
 .about-content h2 {
-	text-align: left;
+	margin-left: 10rem;
+	text-align: justify;
 	line-height: 1.2;
 }
 
 .about-content h3 {
+	margin-left: 10rem;
 	font-size: 2.6rem;
 }
 
 .about-content p {
+	text-align: justify;
 	font-size: 1.6rem;
-	margin: 2rem 0 3rem;
+	margin: 2rem 0 2rem;
+	margin-left: 10rem;
 }
 
 .button {
+	margin-left: 10rem;
 	display: inline-block;
 	padding: 1rem 2.8rem;
 	background: white;
@@ -53,6 +60,27 @@
 	box-shadow: none;
 }
 
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: lightslategray;
+}
+
+.about-me-section {
+	font-size: 1.6rem;
+	margin: 2rem 0 3rem;
+	margin-top: 0%;
+	text-align: center;
+	padding: 0 50px;
+}
+
+.about-me-section img {
+	max-width: 50%;
+	height: auto;
+	border-radius: 10%;
+}
+
 footer {
 	background: rgba(0, 0, 0, 0.1);
 	color: #fff;
@@ -61,23 +89,4 @@ footer {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-}
-
-body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-	background-color: cornflowerblue;
-}
-
-.about-me-section {
-	text-align: center;
-	padding: 50px;
-}
-
-.about-me-section img {
-	max-width: 100%;
-	height: auto;
-	border-radius: 50%;
-	margin: 20px;
 }
